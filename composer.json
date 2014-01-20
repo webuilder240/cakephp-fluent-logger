@@ -1,0 +1,31 @@
+{
+  "name" : "nanapi/cakephp-fluent-logger",
+  "type": "cakephp-plugin",
+  "extra": {
+    "installer-name" : "FluentLogger"
+  },
+  "description": "Fluent log engine plugin for CakePHP",
+  "keywords": [
+    "cakephp",
+    "plugin",
+    "log",
+    "fluent"
+  ],
+  "homepage": "https://github.com/nanapi/cakephp-fluent-logger",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yuhei Kagaya",
+      "email": "yuhei.kagaya@nanapi.co.jp"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/nanapi/cakephp-fluent-logger/issues",
+    "source": "https://github.com/nanapi/cakephp-fluent-logger"
+  },
+  "require": {
+    "php": ">=5.3.0",
+    "composer/installers": "*",
+    "fluent/logger": "v0.3.7"
+  }
+}
