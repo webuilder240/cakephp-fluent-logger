@@ -24,17 +24,17 @@ class FluentLog extends BaseLog {
   }
 
   public function write($type, $message) {
+    $log = array(
+      'datetime' => date('Y-m-d H:i:s'),
+      'hostname' => env('HOSTNAME'),
+      'type' => ucfirst($type),
+      'message' => $message
+    );
     $this->logger->post(
       sprintf('%s.%s', $this->_config['prefix'], strval($type)),
-      array(
-        'datetime' => date('Y-m-d H:i:s'),
-        'type' => ucfirst($type),
-        'message' => $message
-      )
+      $log
     );
     return true;
   }
 
 }
-
-
