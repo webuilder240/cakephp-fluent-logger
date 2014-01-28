@@ -15,7 +15,7 @@ You can install it using the Composer.
 ```json
 {
   "require": {
-    "nanapi/cakephp-fluent-logger": "v1.0.0"
+    "nanapi/cakephp-fluent-logger": "v1.0.1"
   }
 }
 ```
@@ -23,7 +23,7 @@ You can install it using the Composer.
 ### copy directory
 ```sh
 cd app/Plugin
-git clone git@github.com:nanapi/cakephp-redis.git FluentLogger
+git clone git@github.com:nanapi/cakephp-fluent-logger.git FluentLogger
 
 cd app/Vendor
 git clone https://github.com/fluent/fluent-logger-php.git fluent/logger
